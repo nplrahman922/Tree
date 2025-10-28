@@ -1,0 +1,31 @@
+public class Main {
+
+    public static void main(String[] args) {
+        // 1. Buat objek pohonnya
+        BinarySearchTree bst = new BinarySearchTree();
+
+        // 2. Masukkan data (kita pakai contoh asli kamu)
+        System.out.println("Memasukkan data: 2, 4, 1, 3, 5");
+        
+        bst.insert(2);
+        bst.insert(4);
+        bst.insert(1);
+        bst.insert(3);
+        bst.insert(5);
+        
+        // Kamu bisa tambahkan data lain untuk tes, misalnya:
+        // bst.insert(7);
+        // bst.insert(6);
+
+        // 3. Panggil fungsi display 2D
+        System.out.println("\n--- Hasil Tampilan Pohon 2D ---");
+        bst.displayTriangularTree();
+        System.out.println("-------------------------------");
+
+        // Contoh kalau pohonnya kosong
+        System.out.println("\nTes pohon kosong:");
+        BinarySearchTree bstKosong = new BinarySearchTree();
+        bstKosong.displayTriangularTree();
+        System.out.println("-------------------------------");
+    }
+}
